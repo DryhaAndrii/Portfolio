@@ -1,0 +1,26 @@
+.button {
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: linear-gradient(#121212, #121212) padding-box,
+    linear-gradient(90deg, #664ab8, #1ec9e4, #664ab8) border-box;
+  color: white;
+  cursor: pointer;
+
+  &.variant-1 {
+    background: linear-gradient(#000000, #000000) padding-box,
+      linear-gradient(90deg, #664ab8, #1ec9e4, #664ab8) border-box;
+  }
+  &.variant-2 {
+    background: linear-gradient(#000000, #000000) padding-box,
+      linear-gradient(135deg, #34326f, #fba5e9) border-box;
+  }
+  &.variant-3 {
+    background: linear-gradient(#000000, #000000) padding-box,
+      linear-gradient(45deg, #b73151, #fadea9) border-box;
+  }
+  &.variant-4 {
+    background: linear-gradient(#000000, #000000) padding-box,
+      linear-gradient(345deg, #5f1799, #c33b6e) border-box;
+  }
+}

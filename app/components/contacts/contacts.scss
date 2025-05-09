@@ -1,0 +1,47 @@
+.contacts {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  button {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contacts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-gap: 1rem;
+    a {
+      display: flex;
+      justify-content: center;
+      button {
+        width: 400px;
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .contacts {
+    button {
+      width: 250px;
+    }
+  }
+}
+@media (max-width: 568px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    a {
+      width: 100%;
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

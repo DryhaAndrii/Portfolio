@@ -1,0 +1,28 @@
+.hero {
+  width: 100%;
+
+  span {
+    font-size: 8rem;
+    letter-spacing: 5px;
+    background: linear-gradient(to right, #914ee9, #3bc7fd, #914ee9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+@media (max-width: 688px) {
+  .hero span {
+    background: linear-gradient(
+      to right,
+      #914ee9 30%,
+      #3bc7fd 50%,
+      #914ee9 70%
+    );
+    -webkit-background-clip: text;
+    display: block;
+    text-align: center;
+    font-size: 6rem;
+    letter-spacing: 3px;
+  }
+}
