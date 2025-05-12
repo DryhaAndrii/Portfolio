@@ -2,18 +2,28 @@
 
 import { motion } from "framer-motion";
 
-export default function FadeInner({
-  children,
-  highlight,
-}: {
+const highlightVariants = {
+  hidden: { opacity: 0, scale: 0.8, x: -100, filter: "blur(100px)" },
+  visible: { opacity: 1, scale: 1, x: 0, filter: "blur(0px)" },
+};
+
+const defaultVariants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+};
+
+interface FadeInnerProps {
   children: React.ReactNode;
   highlight?: boolean;
-}) {
+}
+
+export default function FadeInner({ children, highlight }: FadeInnerProps) {
   if (highlight) {
     return (
       <motion.div
-        initial={{ opacity: 0,scale:0,x:-400 }}
-        animate={{ opacity: 1,scale:1,x:0 }}
+        initial="hidden"
+        whileInView="visible"
+        variants={highlightVariants}
         transition={{ duration: 1 }}
       >
         {children}
@@ -22,9 +32,10 @@ export default function FadeInner({
   }
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.2 }}
+      initial="hidden"
+      animate="visible"
+      variants={defaultVariants}
+      transition={{ duration: 0.5 }}
     >
       {children}
     </motion.div>
