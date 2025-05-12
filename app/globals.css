@@ -3,13 +3,26 @@
   src: url("./assets/Oswald.ttf") format("truetype");
 }
 
+
+@font-face {
+  font-family: "Nunita";
+  src: url("./assets/Nunita.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Robota";
+  src: url("./assets/Robota.ttf") format("truetype");
+}
+
+
+
 html,
 body {
-  font-family: "Oswald";
+  font-family: "Robota";
   color: #f0f0f0;
 }
 button{
-  font-family: "Oswald";
+  font-family: "Robota";
 
 }
 p,

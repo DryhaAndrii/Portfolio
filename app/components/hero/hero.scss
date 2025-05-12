@@ -1,18 +1,24 @@
 .hero {
   width: 100%;
-
-  span {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  p{
+    line-height: 1.5;
+  }
+  h1 {
     font-size: 8rem;
     letter-spacing: 5px;
     background: linear-gradient(to right, #914ee9, #3bc7fd, #914ee9);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    font-weight: 600;
   }
 }
 
 @media (max-width: 688px) {
-  .hero span {
+  .hero h1 {
     background: linear-gradient(
       to right,
       #914ee9 30%,
@@ -20,8 +26,6 @@
       #914ee9 70%
     );
     -webkit-background-clip: text;
-    display: block;
-    text-align: center;
     font-size: 6rem;
     letter-spacing: 3px;
   }
