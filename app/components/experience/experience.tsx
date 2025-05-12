@@ -16,7 +16,7 @@ export default function Experience() {
           </div>
           <span>Full-stack developer</span>
           <ul>
-            <ListRevealer>
+            <ListRevealer amount={0.1}>
               <li>Development of functional web applications </li>
               <li>Improving and maintaining existing websites</li>
               <li>Testing and debugging of the code</li>
