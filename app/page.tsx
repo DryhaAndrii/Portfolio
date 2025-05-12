@@ -3,6 +3,7 @@ import Header from "./components/header/header";
 import Hero from "./components/hero/hero";
 import Contacts from "./components/contacts/contacts";
 import Background from "./components/background/background";
+import Experience from "./components/experience/experience";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Contacts />
+      <Experience />
     </div>
   );
 }

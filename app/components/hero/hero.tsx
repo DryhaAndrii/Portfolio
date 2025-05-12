@@ -1,8 +1,4 @@
-"use client";
-
-import FadeInner from "../fadeInner/fadeInner";
-
-import { motion } from "framer-motion";
+import FadeInner from "@/app/components/animations/fadeInner/fadeInner";
 
 import "./hero.scss";
 
@@ -12,6 +8,7 @@ export default function Hero() {
       <FadeInner>
         <p>Hey, I'm</p>
       </FadeInner>
+      
       <FadeInner highlight>
         <h1>Dryha Andrii</h1>
       </FadeInner>

@@ -22,9 +22,9 @@ export default function FadeInner({ children, highlight }: FadeInnerProps) {
     return (
       <motion.div
         initial="hidden"
-        whileInView="visible"
+        animate="visible"
         variants={highlightVariants}
-        transition={{ duration: 1 }}
+        transition={{ duration: 1.5 }}
       >
         {children}
       </motion.div>
@@ -35,7 +35,7 @@ export default function FadeInner({ children, highlight }: FadeInnerProps) {
       initial="hidden"
       animate="visible"
       variants={defaultVariants}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 1 }}
     >
       {children}
     </motion.div>

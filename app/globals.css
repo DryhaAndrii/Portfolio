@@ -3,7 +3,6 @@
   src: url("./assets/Oswald.ttf") format("truetype");
 }
 
-
 @font-face {
   font-family: "Nunita";
   src: url("./assets/Nunita.ttf") format("truetype");
@@ -14,20 +13,20 @@
   src: url("./assets/Robota.ttf") format("truetype");
 }
 
-
-
 html,
 body {
   font-family: "Robota";
   color: #f0f0f0;
 }
-button{
+button {
   font-family: "Robota";
-
 }
 p,
 h1,
-a,button {
+h2,
+h3,
+a,
+button {
   letter-spacing: 1px;
   font-size: 1.5rem;
   font-weight: 300;

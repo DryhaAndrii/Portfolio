@@ -1,10 +1,6 @@
-"use client"; // если ты используешь Next.js 13+
-
-import { motion } from "framer-motion";
-
+import FadeInner from "@/app/components/animations/fadeInner/fadeInner";
 import "./header.scss";
 import Links from "./links/links";
-import FadeInner from "../fadeInner/fadeInner";
 
 export default function Header() {
   return (

@@ -1,7 +1,7 @@
 import {
   Github,
   Linkedin,
-  Send as Telegram, // Telegram нет, используем альтернативу
+  Send as Telegram,
   Mail as Email,
 } from "lucide-react";
 

@@ -1,12 +1,12 @@
 import Link from "next/link";
 import "./contacts.scss";
-import Button from "../button/button";
-import Icons from "../icons/icons";
-import ListRevealer from "../listRevelaer/listRevealer";
+import Button from "@/app/components/button/button";
+import Icons from "@/app/components/icons/icons";
+import ListRevealer from "@/app/components/animations/listRevealer/listRevealer";
 
 export default function Contacts() {
   return (
-    <div className="contacts" id="contacts">
+    <section className="contacts" id="contacts">
       <ListRevealer>
         <Link href={"mailto:driga.and@gmail.com"}>
           <Button variant="1">
@@ -33,6 +33,6 @@ export default function Contacts() {
           </Button>
         </Link>
       </ListRevealer>
-    </div>
+    </section>
   );
 }

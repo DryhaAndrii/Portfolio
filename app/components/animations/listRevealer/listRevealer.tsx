@@ -18,9 +18,11 @@ export default function ListRevealer({
       {children.map((child, index) => (
         <motion.div
           key={index}
-          initial={{ opacity: 0, x: -100 * index }}
+          initial={{ opacity: 0, x: -50 * index }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: index * delay, duration: 0.6 }}
+          exit={{ opacity: 0, x: -50 * index }}
+          transition={{ duration: 0.5, delay: index * delay }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           {child}
         </motion.div>
