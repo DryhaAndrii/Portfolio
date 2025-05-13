@@ -6,6 +6,10 @@
     linear-gradient(90deg, #664ab8, #1ec9e4, #664ab8) border-box;
   color: white;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
 
   &.variant-1 {
     background: linear-gradient(#000000, #000000) padding-box,
