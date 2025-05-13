@@ -1,17 +1,15 @@
 import Image from "next/image";
 import SectionRevealer from "../animations/sectionRevealer/sectionRevealer";
-import "./projects.scss";
-import musicShopImage from "@/public/assets/images/projects/musicShop.png";
 import Button from "../button/button";
-
 import Link from "next/link";
 import { GithubIcon, TvMinimal } from "lucide-react";
 import { projects } from "./projects.data";
-import ListRevealer from "../animations/listRevealer/listRevealer";
+
+import "./projects.scss";
 
 export default function Projects() {
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <h2>Projects</h2>
       {projects.map((project, i, array) => (
         <SectionRevealer classname="projects-item" key={i}>

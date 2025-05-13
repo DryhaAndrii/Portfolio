@@ -1,5 +1,5 @@
-import musicShopImage from "@/public/assets/images/projects/musicShop.png";
-import quickDropImage from "@/public/assets/images/projects/quickDrop.png";
+import musicShopImage from "@/public/images/projects/musicShop.png";
+import quickDropImage from "@/public/images/projects/quickDrop.png";
 
 export const projects = [
   {

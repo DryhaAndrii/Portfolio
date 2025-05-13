@@ -1,6 +1,10 @@
 @font-face {
   font-family: "Roboto";
-  src: url("@/public/assets/fonts/Roboto.ttf") format("truetype");
+  src: url("../public/fonts/Roboto.ttf") format("truetype");
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,

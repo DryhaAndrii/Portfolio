@@ -1,17 +1,18 @@
 import Link from "next/link";
 import "./links.scss";
+import { ContactRound, FileText, FolderOpen } from "lucide-react";
 
 export default function Links() {
   return (
     <div className="links">
-      <Link href="/#projects" scroll={true}>
-        Projects
-      </Link>
       <div>
-        <p>Resume</p>
+        <FileText /> <p>Resume</p>
       </div>
       <Link href="/#contacts" scroll={true}>
-        Contacts
+        <ContactRound /> Contacts
+      </Link>
+      <Link href="/#projects" scroll={true}>
+        <FolderOpen /> Projects
       </Link>
     </div>
   );
