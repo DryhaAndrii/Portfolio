@@ -2,4 +2,27 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  > * {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    h3 {
+      margin-left: 1rem;
+    }
+    ul {
+      margin-left: 1.4rem;
+      list-style: none;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding-left: 1.4rem;
+      font-weight: 200;
+      list-style: none;
+      display: flex;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .technologies {
+    gap: 1rem;
+  }
 }

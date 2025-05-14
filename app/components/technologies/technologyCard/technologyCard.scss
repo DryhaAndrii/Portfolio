@@ -82,6 +82,7 @@
 
 @media (max-width: 900px) {
   .technologyCard {
+    font-size: 0.8rem;
     margin: 0 16px;
     width: 80px;
     height: 80px;
@@ -89,6 +90,7 @@
 }
 @media (max-width: 600px) {
   .technologyCard {
+    font-size: 0.6rem;
     margin: 0 12px;
     width: 60px;
     height: 60px;
@@ -96,6 +98,7 @@
 }
 @media (max-width: 450px) {
   .technologyCard {
+    font-size: 0.4rem;
     margin: 0 8px;
     width: 45px;
     height: 45px;
