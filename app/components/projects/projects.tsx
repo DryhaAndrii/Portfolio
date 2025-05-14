@@ -18,12 +18,14 @@ export default function Projects() {
               <h3>{project.title}</h3>
               <p>{project.description}</p>
             </div>
-            <Image
-              src={project.image}
-              width={500}
-              height={500}
-              alt="musicShop"
-            />
+            <Link href={project.liveUrl}>
+              <Image
+                src={project.image}
+                width={500}
+                height={500}
+                alt="musicShop"
+              />
+            </Link>
           </div>
 
           <div className="projects-item-buttons">

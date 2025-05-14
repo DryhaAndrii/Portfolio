@@ -5,6 +5,7 @@ import Contacts from "./components/contacts/contacts";
 import Background from "./components/background/background";
 import Experience from "./components/experience/experience";
 import Projects from "./components/projects/projects";
+import Technologies from "./components/technologies/technologies";
 
 export default function Home() {
   return (
@@ -16,6 +17,8 @@ export default function Home() {
       <Experience />
       <hr />
       <Projects />
+      <hr />
+      <Technologies />
     </div>
   );
 }
