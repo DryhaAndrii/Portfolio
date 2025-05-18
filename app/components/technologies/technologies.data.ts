@@ -1,4 +1,4 @@
-const iconPath = (file: string) => `Portfolio/images/technologies/${file}`;
+const iconPath = (file: string) => `images/technologies/${file}`;
 
 export const technologies = [
   { title: "CSS", svg: iconPath("css.svg") },
