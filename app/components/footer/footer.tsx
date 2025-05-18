@@ -11,18 +11,38 @@ export default function Footer() {
         <AnchorLinks />
         <hr />
         <div className="bot">
-          <p>© {new Date().getFullYear()} Dryha Andrii. All rights reserved.</p>
+          <div className="copyright">
+            <p>© {new Date().getFullYear()} Dryha Andrii.</p>
+            <p>All rights reserved.</p>
+          </div>
+
           <div className="socials">
-            <Link href={"mailto:driga.and@gmail.com"}>
+            <Link
+              href={"mailto:driga.and@gmail.com"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Icons name="email" />
             </Link>
-            <Link href="https://www.linkedin.com/in/andriy-dryha-2362442b7/">
+            <Link
+              href="https://www.linkedin.com/in/andriy-dryha-2362442b7/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Icons name="linkedin" />
             </Link>
-            <Link href="https://t.me/Dryha_Andrii">
+            <Link
+              href="https://t.me/Dryha_Andrii"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Icons name="telegram" />
             </Link>
-            <Link href="https://github.com/DryhaAndrii">
+            <Link
+              href="https://github.com/DryhaAndrii"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Icons name="github" />
             </Link>
           </div>
