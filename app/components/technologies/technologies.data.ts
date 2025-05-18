@@ -10,7 +10,7 @@ export const technologies = [
   { title: "HTML", svg: iconPath("html.svg") },
 
   { title: "REST API", svg: iconPath("restapi.svg") },
-  { title: "JavaScript", svg: iconPath("javasccript.svg") }, // ← typo! нужно "javascript.svg"
+  { title: "JavaScript", svg: iconPath("javasccript.svg") }, 
   { title: "Jotai", svg: iconPath("jotai.svg") },
   { title: "JWT", svg: iconPath("jwt.svg") },
   { title: "MongoDB", svg: iconPath("mongodb.svg") },
@@ -18,7 +18,7 @@ export const technologies = [
   { title: "NestJS", svg: iconPath("nestjs.svg") },
   { title: "Next.js", svg: iconPath("nextJs.svg") },
   { title: "Node.js", svg: iconPath("nodejs.svg") },
-  { title: "PostgreSQL", svg: iconPath("posgresql.svg") }, // ← typo! должно быть "postgresql.svg"
+  { title: "PostgreSQL", svg: iconPath("posgresql.svg") },
   { title: "React", svg: iconPath("react.svg") },
   { title: "Redux", svg: iconPath("redux.svg") },
   { title: "SCSS", svg: iconPath("scss.svg") },
