@@ -1,11 +1,14 @@
 const iconPath = (file: string) => `images/technologies/${file}`;
+//Since I'm hosting the site on github pages there should be a path like this.
+//If you run it locally, you need to change the link to this one
+//const iconPath = (file: string) => `Portfolio/images/technologies/${file}`;
 
 export const technologies = [
   { title: "CSS", svg: iconPath("css.svg") },
   { title: "Express.js", svg: iconPath("expressjs.svg") },
   { title: "GitHub", svg: iconPath("github.svg") },
   { title: "HTML", svg: iconPath("html.svg") },
-  
+
   { title: "REST API", svg: iconPath("restapi.svg") },
   { title: "JavaScript", svg: iconPath("javasccript.svg") }, // ← typo! нужно "javascript.svg"
   { title: "Jotai", svg: iconPath("jotai.svg") },
