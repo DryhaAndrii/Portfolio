@@ -1,4 +1,4 @@
-.links {
+.anchorLinks {
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -11,7 +11,7 @@
 }
 
 @media (max-width: 900px) {
-  .links {
+  .anchorLinks {
     p {
       font-size: 1rem;
     }
@@ -21,16 +21,16 @@
   }
 }
 
-
 @media (max-width: 568px) {
-  .links {
+  .anchorLinks {
+    gap: 0.5rem;
     p {
       font-size: 0.8rem;
     }
     > * {
       font-size: 0.8rem;
     }
-    svg{
+    svg {
       width: 1.2rem;
       height: 1.2rem;
     }

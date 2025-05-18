@@ -6,3 +6,13 @@ header {
     justify-content: space-between;
   }
 }
+
+@media (max-width: 568px) {
+  header {
+    > div {
+      h1{
+        display: none;
+      }
+    }
+  }
+}

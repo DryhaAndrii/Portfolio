@@ -8,18 +8,20 @@ import { stack } from "./stack.data";
 
 export default function Technologies() {
   return (
-    <div className="technologies">
+    <div className="technologies" id="technologies">
       <h2>My Tech Steck</h2>
       <SectionRevealer>
         {stack.map((item, i) => (
-          <ListRevealer key={i}>
-            <h3>{item.title}</h3>
-            <ul>
-              {item.stack.map((stackItem, i) => (
-                <li key={i}>{stackItem}</li>
-              ))}
-            </ul>
-          </ListRevealer>
+          <div className="item" key={i}>
+            <ListRevealer>
+              <h3>{item.title}</h3>
+              <ul>
+                {item.stack.map((stackItem, i) => (
+                  <li key={i}>{stackItem}</li>
+                ))}
+              </ul>
+            </ListRevealer>
+          </div>
         ))}
         <Carousel />
       </SectionRevealer>

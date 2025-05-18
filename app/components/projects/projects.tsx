@@ -12,7 +12,11 @@ export default function Projects() {
     <div className="projects" id="projects">
       <h2>Projects</h2>
       {projects.map((project, i, array) => (
-        <SectionRevealer classname="projects-item" key={i}>
+        <SectionRevealer
+          classname="projects-item"
+          key={i}
+          left={i % 2 ? true : false}
+        >
           <div className="projects-item-info">
             <div className="projects-item-info-description">
               <h3>{project.title}</h3>

@@ -33,11 +33,19 @@
       gap: 1rem;
     }
   }
+  &-item:nth-child(odd) {
+    .projects-item-info {
+      flex-direction: row-reverse;
+    }
+    .projects-item-buttons {
+      flex-direction: row-reverse;
+    }
+  }
 }
 
 @media (max-width: 1200px) {
   .projects-item-info {
-    flex-direction: column;
+    flex-direction: column !important;
     gap: 2rem;
     img {
       width: 80%;
