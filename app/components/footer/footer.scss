@@ -9,7 +9,7 @@ footer {
   .bot {
     display: flex;
     justify-content: space-between;
-    .copyright{
+    .copyright {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -62,6 +62,16 @@ footer {
             width: 1.5rem;
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  footer {
+    .top {
+       a,p {
+        font-size: 1.2rem !important;
       }
     }
   }

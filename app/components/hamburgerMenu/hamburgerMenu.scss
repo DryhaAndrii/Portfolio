@@ -1,0 +1,34 @@
+.hamburger-menu {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: #1a1a1abf;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 50;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    a,
+    button,
+    div {
+      gap: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+    }
+    button{
+      justify-content: center;
+    }
+  }
+}

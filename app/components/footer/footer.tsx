@@ -8,7 +8,10 @@ export default function Footer() {
   return (
     <SectionRevealer left>
       <footer>
-        <AnchorLinks />
+        <div className="top">
+          <AnchorLinks />
+        </div>
+
         <hr />
         <div className="bot">
           <div className="copyright">

@@ -9,30 +9,11 @@
     gap: 5px;
   }
 }
-
-@media (max-width: 900px) {
+@media (max-width: 720px) {
   .anchorLinks {
-    p {
-      font-size: 1rem;
-    }
-    > * {
-      font-size: 1rem;
-    }
-  }
-}
-
-@media (max-width: 568px) {
-  .anchorLinks {
-    gap: 0.5rem;
-    p {
-      font-size: 0.8rem;
-    }
-    > * {
-      font-size: 0.8rem;
-    }
-    svg {
-      width: 1.2rem;
-      height: 1.2rem;
+    flex-direction: column;
+    a{
+      justify-content: start;
     }
   }
 }
