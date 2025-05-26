@@ -4,6 +4,7 @@ import "./header.scss";
 import AnchorLinks from "../anchorLinks/anchorLinks";
 import HamburgerMenu from "../hamburgerMenu/hamburgerMenu";
 import { useMediaQuery } from "react-responsive";
+import ClientOnly from "../clientOnly/clientOnly";
 
 export default function Header() {
   const isMobile = useMediaQuery({
@@ -14,9 +15,11 @@ export default function Header() {
       <FadeInner>
         <h1>DA.</h1>
         {!isMobile ? (
-          <HamburgerMenu>
-            <AnchorLinks />
-          </HamburgerMenu>
+          <ClientOnly>
+            <HamburgerMenu>
+              <AnchorLinks />
+            </HamburgerMenu>
+          </ClientOnly>
         ) : (
           <AnchorLinks />
         )}
