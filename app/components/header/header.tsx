@@ -10,19 +10,20 @@ export default function Header() {
   const isMobile = useMediaQuery({
     query: "(min-width: 720px)",
   });
+  
   return (
     <header>
       <FadeInner>
         <h1>DA.</h1>
-        {!isMobile ? (
-          <ClientOnly>
+        <ClientOnly>
+          {!isMobile ? (
             <HamburgerMenu>
               <AnchorLinks />
             </HamburgerMenu>
-          </ClientOnly>
-        ) : (
-          <AnchorLinks />
-        )}
+          ) : (
+            <AnchorLinks />
+          )}
+        </ClientOnly>
       </FadeInner>
     </header>
   );

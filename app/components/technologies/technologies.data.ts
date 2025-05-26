@@ -1,6 +1,6 @@
 const iconPath = (file: string) => `images/technologies/${file}`;
 //Since I'm hosting the site on github pages there should be a path like this.
-//   `/images/technologies/${file}`;
+//   `images/technologies/${file}`;
 //If you run it locally, you need to change the link to this one
 //const iconPath = (file: string) => `Portfolio/images/technologies/${file}`;
 
