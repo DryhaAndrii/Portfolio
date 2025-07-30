@@ -23,7 +23,11 @@ export default function Home() {
         <Technologies />
       </div>
 
-      <Footer />
+      <div className="footerContainer">
+        <div className="container">
+          <Footer />
+        </div>
+      </div>
     </>
   );
 }
