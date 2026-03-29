@@ -1,4 +1,4 @@
-const iconPath = (file: string) => `Portfolio/images/technologies/${file}`;
+const iconPath = (file: string) => `images/technologies/${file}`;
 //Since I'm hosting the site on github pages there should be a path like this.
 //   `images/technologies/${file}`;
 //If you run it locally, you need to change the link to this one
@@ -11,7 +11,7 @@ export const technologies = [
   { title: "HTML", svg: iconPath("html.svg") },
 
   { title: "REST API", svg: iconPath("restapi.svg") },
-  { title: "JavaScript", svg: iconPath("javasccript.svg") }, 
+  { title: "JavaScript", svg: iconPath("javasccript.svg") },
   { title: "Jotai", svg: iconPath("jotai.svg") },
   { title: "JWT", svg: iconPath("jwt.svg") },
   { title: "MongoDB", svg: iconPath("mongodb.svg") },
@@ -25,4 +25,6 @@ export const technologies = [
   { title: "SCSS", svg: iconPath("scss.svg") },
   { title: "Tailwind", svg: iconPath("tailwind.svg") },
   { title: "TypeScript", svg: iconPath("typescript.svg") },
+
+  { title: "React Native", svg: iconPath("reactnative.svg") },
 ];
