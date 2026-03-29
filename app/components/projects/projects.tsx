@@ -19,7 +19,10 @@ export default function Projects() {
         >
           <div className="projects-item-info">
             <div className="projects-item-info-description">
-              <h3>{project.title}</h3>
+              <div className="projects-item-info-heading">
+                <h3>{project.title}</h3>
+                <span className="projects-item-info-period">{project.period}</span>
+              </div>
               <p>{project.description}</p>
             </div>
             <Link href={project.liveUrl}>
