@@ -1,35 +1,34 @@
 import ListRevealer from "../animations/listRevealer/listRevealer";
 import SectionRevealer from "../animations/sectionRevealer/sectionRevealer";
+import experienceData from "./experienceData.json";
 import "./experience.scss";
 
 export default function Experience() {
   return (
-      <SectionRevealer classname="experience">
-        <h2>Experience</h2>
+    <SectionRevealer classname="experience">
+      <h2>Experience</h2>
 
-        <div className="experience-item">
+      {experienceData.map((item) => (
+        <div
+          key={`${item.company}-${item.period}`}
+          className="experience-item"
+        >
           <div className="experience-item-header">
             <ListRevealer>
-              <h3>Fernir (Remote)</h3>
-              <p>Aug 2024 - Feb 2025</p>
+              <h3>{item.company}</h3>
+              <p>{item.period}</p>
             </ListRevealer>
           </div>
-          <span>Full-stack developer</span>
+          <span>{item.role}</span>
           <ul>
             <ListRevealer amount={0.1}>
-              <li>Development of functional web applications </li>
-              <li>Improving and maintaining existing websites</li>
-              <li>Testing and debugging of the code</li>
-              <li>Integration of web applications with databases</li>
-              <li>Development of user interfaces</li>
-              <li>Development of responsive websites for different devices</li>
-              <li>
-                Participation in meetings with the development team and
-                management
-              </li>
+              {item.bullets.map((text) => (
+                <li key={text}>{text}</li>
+              ))}
             </ListRevealer>
           </ul>
         </div>
-      </SectionRevealer>
+      ))}
+    </SectionRevealer>
   );
 }

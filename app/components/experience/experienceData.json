@@ -1,0 +1,37 @@
+[
+  {
+    "company": "Fernir (Remote)",
+    "period": "Jun 2024 - May 2025",
+    "role": "Full-stack developer",
+    "bullets": [
+      "Developed SPA applications using React and Redux",
+      "Integrated frontend with backend APIs and databases",
+      "Improved performance and fixed critical bugs in production systems",
+      "Built responsive and adaptive user interfaces",
+      "Participated in feature development and code reviews within the team"
+    ]
+  },
+  {
+    "company": "Axels (Remote)",
+    "period": "Jun 2025 - April 2026",
+    "role": "Fullstack Developer (React / React Native)",
+    "bullets": [
+      "Built web and mobile applications from scratch (React, Next.js, React Native with Expo) - from project setup to production deployment",
+      "Developed and maintained backend services (Node.js, Express/NestJS, REST API, GraphQL)",
+      "Implemented authentication systems (Firebase, Supabase, OAuth with Google and Apple) Integrated subscription payments from scratch (full flow: backend, frontend,",
+      "Configured CI/CD and deployment (Vercel, Expo EAS, App Store, Google Play)",
+      "Implemented caching and offline-first logic (TanStack Query, IndexedDB, LocalStorage, PowerSync)",
+      "Built demo/offline modes with client-side data persistence and sync strategies",
+      "Integrated third-party APIs (finance/crypto data, AI services, ElevenLabs voice synthesis)",
+      "Automated code review via AI integration in GitHub Actions (PR comments and feedback)",
+      "Implemented email workflows (verification, password reset, notifications)",
+      "Developed onboarding flows and guided user tours",
+      "Built admin panels for user and data management",
+      "Added analytics and tracking (Hotjar) and integrated Google Ads (web/mobile)",
+      "Optimized applications for SEO (Google, Bing) and performance",
+      "Implemented i18n, dark/light themes, responsive and adaptive UI",
+      "Wrote unit and integration tests (Jest, Vitest, React Testing Library)",
+      "Developed data export functionality (Excel generation via backend, Redis usage)"
+    ]
+  }
+]
