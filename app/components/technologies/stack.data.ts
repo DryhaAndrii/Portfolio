@@ -2,22 +2,34 @@ export const stack = [
   {
     title: "Frontend",
     stack: [
-      "React, Next.js",
-      "HTML, CSS, JavaScript, TypeScript",
-      "SCSS, Tailwind, MaterialUI",
-      "Redux, Zustand, Jotai",
+      "React, React Native (Expo), Next.js, TypeScript, JavaScript",
+      "Tailwind CSS, SCSS, Material UI, Framer Motion",
+      "Redux, Zustand, Jotai, TanStack Query",
+      "i18n, dark/light theme support, responsive/adaptive UI",
     ],
   },
   {
     title: "Backend",
     stack: [
-      "Node.JS, Express.JS, Nest.JS",
-      "MongoDB, Mongoose, PostgreSQL",
-      "Mongoose, TypeORM",
+      "Node.js, Express.js, Nest.js, GraphQL, REST API",
+      "PostgreSQL, MongoDB, Redis",
+      "Authentication: Firebase, Supabase, OAuth (Google, Apple)",
+      "Payment integration: Stripe, subscription flows",
     ],
   },
   {
-    title: "Other",
-    stack: ["Docker, Webpack, ESLint, Vite", "GitHub, GitLab"],
+    title: "Mobile & Deployment",
+    stack: [
+      "Expo, EAS Update, App Store, Google Play",
+      "Offline-first, caching (TanStack Query, LocalStorage, IndexedDB, PowerSync)",
+    ],
+  },
+  {
+    title: "Dev Tools & Others",
+    stack: [
+      "GitHub Actions, Docker, Vite, ESLint, Jest, Vitest, React Testing Library",
+      "Analytics: Hotjar, Google Ads",
+      "Third-party APIs: AI integrations (ElevenLabs, custom AI services), finance & crypto APIs",
+    ],
   },
 ];
