@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState, type MouseEvent } from "react";
 import "./technologyCard.scss";
 
 interface Props {
@@ -12,18 +12,25 @@ interface Props {
 export default function TechnologyCard({ index: i, item }: Props) {
   const [flip, setFlip] = useState(false);
 
-  function handleClick() {
-    setFlip(!flip);
-  }
-  
+  const handleClick = useCallback((e: MouseEvent<HTMLButtonElement>) => {
+    e.stopPropagation();
+    setFlip((prev) => !prev);
+  }, []);
+
   return (
-    <div
+    <button
+      type="button"
       className={`technologyCard variant-${(i % 4) + 1} ${flip ? "flip" : ""}`}
-      key={i}
       onClick={handleClick}
+      aria-pressed={flip}
+      aria-label={`${item.title}. Click to ${flip ? "show icon" : "show name"}.`}
     >
-      <img src={item.svg} alt={item.title} />
-      <div className="title">{item.title}</div>
-    </div>
+      <span className="technologyCard-face technologyCard-face--front">
+        <img src={item.svg} alt="" aria-hidden />
+      </span>
+      <span className="technologyCard-face technologyCard-face--back">
+        {item.title}
+      </span>
+    </button>
   );
 }
