@@ -5,6 +5,7 @@ import {
   Mail as Email,
   Hamburger,
   X,
+  Pencil,
 } from "lucide-react";
 
 import "./icons.scss";
@@ -16,6 +17,7 @@ export const iconNames = [
   "email",
   "hamburger",
   "close",
+  "pencil",
 ] as const;
 
 export type IconName = (typeof iconNames)[number];
@@ -32,6 +34,7 @@ const iconMap = {
   email: Email,
   hamburger: Hamburger,
   close: X,
+  pencil: Pencil,
 };
 
 export default function Icons({ name, size = "2rem" }: IconProps) {
