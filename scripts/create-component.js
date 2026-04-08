@@ -17,7 +17,6 @@ function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-
 fs.mkdirSync(dirPath);
 fs.writeFileSync(
   `${dirPath}/${componentName}.tsx`,
@@ -30,7 +29,7 @@ export default function ${capitalizeFirstLetter(componentName)}(){
     </div>
   );
 };
-`
+`,
 );
 
 fs.writeFileSync(
@@ -38,7 +37,7 @@ fs.writeFileSync(
   `.${componentName} {
   // styles
 }
-`
+`,
 );
 
 console.log(`✅ Component ${componentName} created.`);
